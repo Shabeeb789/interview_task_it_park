@@ -11,10 +11,8 @@ import 'package:interview_task_trissur/view/widgets/auth_field.dart';
 class LoginPage extends ConsumerWidget {
   LoginPage({super.key});
 
-  final TextEditingController _email =
-      TextEditingController(text: "shabeeb1@gmail.com");
-  final TextEditingController _password =
-      TextEditingController(text: "password");
+  final TextEditingController _email = TextEditingController();
+  final TextEditingController _password = TextEditingController();
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
 
   @override

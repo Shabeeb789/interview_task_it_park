@@ -11,12 +11,9 @@ import 'package:interview_task_trissur/view/widgets/auth_field.dart';
 class SigninPage extends ConsumerWidget {
   SigninPage({super.key});
 
-  final TextEditingController _nameController =
-      TextEditingController(text: "Shabeeb");
-  final TextEditingController _emailController =
-      TextEditingController(text: "shabeeb1@gmail.com");
-  final TextEditingController _passwordController =
-      TextEditingController(text: "password");
+  final TextEditingController _nameController = TextEditingController();
+  final TextEditingController _emailController = TextEditingController();
+  final TextEditingController _passwordController = TextEditingController();
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
   @override
   Widget build(BuildContext context, WidgetRef ref) {

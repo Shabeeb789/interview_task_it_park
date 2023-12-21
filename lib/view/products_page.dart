@@ -16,7 +16,7 @@ class ProductsPage extends ConsumerWidget {
       appBar: AppBar(
         backgroundColor: Colors.teal,
         title: Text(
-            "${titleList.first[0].toUpperCase()}${titleList.first.substring(1)} ${titleList.last[0].toUpperCase()}${titleList.last.substring(1)}"),
+            "${titleList.first[0].toUpperCase()}${titleList.first.substring(1)} ${titleList.length > 1 ? titleList.last[0].toUpperCase() + titleList.last.substring(1) : ''}"),
       ),
       body: PageView.builder(
         scrollDirection: Axis.horizontal,

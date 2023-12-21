@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:interview_task_trissur/view/homepage.dart';
+
+import 'view/widgets/togglebutton.dart';
 
 void main() {
   runApp(const ProviderScope(child: MyApp()));
@@ -13,12 +14,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Machine Test',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: false,
       ),
-      home: const HomeScreen(),
+      home: const ToggleButton(),
     );
   }
 }

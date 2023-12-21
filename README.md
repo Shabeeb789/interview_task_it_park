@@ -1,16 +1,23 @@
-# interview_task_trissur
+# Shabeeb - Machine Test
 
-A new Flutter project.
+This is a machine test project made with flutter which is assigned to me as a machine test.
 
-## Getting Started
+## Intructions to build the app
 
-This project is a starting point for a Flutter application.
+- Clone the github repository
 
-A few resources to get you started if this is your first Flutter project:
+```Bash
+git clone https://github.com/Shabeeb789/interview_task_it_park
+```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Install dependencies
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```Bash
+flutter pub get
+```
+
+- For generating the of both freezed and riverpod provider classes run the below command in the terminal
+
+```Bash
+dart run build_runner build
+```

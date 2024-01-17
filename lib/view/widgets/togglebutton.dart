@@ -14,7 +14,7 @@ class _ToggleButtonState extends State<ToggleButton> {
   final List<bool> _signupor = <bool>[true, false];
 
   final List<Widget> loginorsignup = [
-    const Text("SIGN IN"),
+    const Text("SIGN UP"),
     const Text("LOG IN"),
   ];
 

@@ -74,7 +74,7 @@ class SigninPage extends ConsumerWidget {
                 height: Responsive.height(20, context),
               ),
               AuthButton(
-                text: "SIGN IN",
+                text: "SIGN UP",
                 onPressed: () async {
                   if (_formKey.currentState!.validate()) {
                     String? errorText = await ref

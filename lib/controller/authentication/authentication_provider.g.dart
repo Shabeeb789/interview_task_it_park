@@ -22,7 +22,7 @@ final getProtectedMessageProvider = AutoDisposeFutureProvider<String?>.internal(
 );
 
 typedef GetProtectedMessageRef = AutoDisposeFutureProviderRef<String?>;
-String _$authenticationHash() => r'74512065482a518c9c2d31072e6fdb81c5c5c73a';
+String _$authenticationHash() => r'a1a198a847cfbb5a9f10bde0002116767822ac91';
 
 /// See also [Authentication].
 @ProviderFor(Authentication)

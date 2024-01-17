@@ -1,4 +1,5 @@
 import 'package:interview_task_trissur/controller/authentication/authentication_state.dart';
+import 'package:interview_task_trissur/services/storage.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 import '../../../services/api_service.dart';
@@ -13,6 +14,19 @@ class Authentication extends _$Authentication {
       token: null,
       isLoading: false,
     );
+  }
+
+  void setToken() {
+    ref.read(storageProvider).setToken(state.token!);
+  }
+
+  void getToken() async {
+    String? token = await ref.read(storageProvider).getToken();
+    state = state.copyWith(token: token);
+  }
+
+  void deleteToken() {
+    ref.read(storageProvider).removeToken();
   }
 
   Future<String?> getProtectedData() async {
@@ -33,6 +47,7 @@ class Authentication extends _$Authentication {
           .read(apiServiceProvider)
           .loginUser(email: email, password: password);
       state = state.copyWith(token: token);
+      setToken();
       return null;
     } catch (e) {
       return 'Login failed. Please try again';

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-
-import 'view/widgets/togglebutton.dart';
+import 'package:interview_task_trissur/view/widgets/authchecker.dart';
 
 void main() {
   runApp(const ProviderScope(child: MyApp()));
@@ -20,7 +19,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: false,
       ),
-      home: const ToggleButton(),
+      home: const AuthChecker(),
     );
   }
 }

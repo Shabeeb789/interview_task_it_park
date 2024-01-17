@@ -15,6 +15,7 @@ class ProductModel with _$ProductModel {
     required Rating rating,
   }) = _ProductModel;
 
+//fromjson and to json undakaam//
   factory ProductModel.fromJson(Map<String, Object?> json) =>
       _$ProductModelFromJson(json);
 }
